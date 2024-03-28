@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import iconSedans from "./assets/icon-sedans.svg"
+import iconSuvs from "./assets/icon-suvs.svg"
+import iconLuxury from "./assets/icon-luxury.svg"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App(){
+  return(
+    <main>
+      <section>
+        <div>
+          <img src ={iconSedans} alt="icone dos carros sedans" />
+          <h2>Sedans</h2>
+          <p>texto sedans, nao to conseguindo copiar</p>
+          <a href="https://www.webmotors.com.br/sedans" target="_blank">Ver mais</a>
+        </div>
+         
+         <div>
+          <img src={iconsSuvs} alt="Icone dos suvs" />
+          <h2>SUVs</h2>
+          <p>Texto suvs</p>
+          <a href="https://www.webmotors.com.br/suvs"target="_blank">Ver mais</a>
+         </div>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <div>
+          <img src={iconLuxury} alt="icone dos carros de luxo" />
+          <h2>Luxuosos</h2>
+          <p>texto do Luxuosos</p>
+          <a href="https://www.webmotors.com.br/carros-de-luxo"target="_blank">ver mais</a>
+        </div>
+      </section>
+    </main>
   )
 }
-
-export default App
