@@ -13,14 +13,14 @@ export default function App(){
           <a className="font-lexend" href="https://www.webmotors.com.br/sedans" target="_blank">Ver mais</a>
         </div>
          
-         <div className="bg-green">
+         <div className="bg-green p-12">
           <img src={iconsSuvs} alt="Icone dos suvs" />
           <h2 className="font-shoulders">SUVs</h2>
           <p className="font-lexend">Texto suvs</p>
           <a className="font-lexend" href="https://www.webmotors.com.br/suvs"target="_blank">Ver mais</a>
          </div>
 
-        <div className="bg-dark-green">
+        <div className="bg-dark-green p-12">
           <img src={iconLuxury} alt="icone dos carros de luxo" />
           <h2 className="font-shoulders">Luxuosos</h2>
           <p className="font-lexend">texto do Luxuosos</p>
